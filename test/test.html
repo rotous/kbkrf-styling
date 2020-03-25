@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/krf.min.css">
+		<title>Klant Registratie Functie Testpagina</title>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<!-- this might seem a bit strange but most users expect the logo to be in the header -->
+				<!-- so although we will visually show it at the bottom, semantically it will be at the top -->
+				<h2 class="logo"><span class="hidden-accessible">de online Bibliotheek</span></h2>
+			</header>
+			<main class="with-help-btn">
+				<h1>Welkom bij de KRF Testpagina</h1>
+				<p>Deze pagina bevat enkele elementen om de styling te testen.</p>
+
+				<h2>Paragraph with a link</h2>
+				<p>
+					Geen zorgen, een gratis account geeft je al toegang tot gevarieerde selecties.
+					<a href="#">Word lid van de Bibliotheek</a> als je liever uit alle boeken kiest.
+				</p>
+
+				<h2>Een link die eruit ziet als een button</h2>
+				<p><a class="button" href="#">Inloggen</a></p>
+
+				<h2>Een call-to-action link</h2>
+				<p class="cta-wrap">Nieuw bij de Bibliotheek?<br><a class="cta" href="#">Account aanmaken</a></p>
+				<p class="cta-wrap right-align"><a class="cta" href="#">Wachtwoord vergeten?</a></p>
+				<p class="cta-wrap center-align">Nieuw bij de Bibliotheek?<br><a class="cta" href="#">Account aanmaken</a></p>
+
+				<h2>Horizontal ruler with text</h2>
+				<div class="heading-with-ruler-wrap">
+					<hr>
+					<h2 class="heading-with-ruler-text">Nieuw bij de Bibliotheek?</h2>
+				</div>
+
+
+				<h2>Form elements</h2>
+				<h3>A button</h3>
+				<button type="button"><span>Simple button</span></button>
+
+				<h3>A disabled button</h3>
+				<button type="button" disabled>disabled button</button>
+
+				<h3>A dark button</h3>
+				<button type="button" class="dark">Simple button</button>
+
+				<h3>A disabled dark button</h3>
+				<button type="button" class="dark" disabled>Simple button</button>
+
+				<h3>An input</h3>
+				<label for="firstname" class="hidden-accessible">Voornaam*</label>
+				<input type="text" placeholder="Voornaam*" id="firstname" name="firstname">
+
+				<h3>A small input</h3>
+				<label for="prefix" class="hidden-accessible">Tussenvoegsel</label>
+				<input class="small" type="text" placeholder="Tussenvoegsel" id="prefix" name="prefix">
+
+				<h3>A password input</h3>
+				<div class="input-password input-with-button-wrap">
+					<label for="password" class="hidden-accessible">Wachtwoord</label>
+					<input type="password" class="with-button" placeholder="Wachtwoord" id="password" name="password">
+					<button type="button" aria-pressed="false" class="icon input-button show-password" onclick="var i=this.parentElement.querySelector('input'); i.setAttribute('type', i.getAttribute('type')==='password'?'text': 'password'); this.setAttribute('aria-pressed', this.getAttribute('aria-pressed')==='true'?'false':'true')">
+						<svg class="icon icon-visibility icon-pressed-true" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation" tabindex="-1" title="VisibilityOff"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+						<svg class="icon icon-visibilityoff icon-pressed-false" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation" tabindex="-1" title="VisibilityOff"><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></svg>
+						<span class="text">Wachtwoord zichtbaar</span>
+					</button>
+				</div>
+
+				<h3>An e-mail input with address validation styling</h3>
+				<label for="email" class="hidden-accessible">E-mailadres</label>
+				<input type="email" required placeholder="E-mailadres" id="email" name="email" value="jbarendregt@icloud.com">
+
+				<h3>An input with an error</h3>
+				<label for="pincode-or-password" class="hidden-accessible">Pincode of wachtwoord</label>
+				<input type="password" required placeholder="Pincode of wachtwoord" id="pincode-or-password" name="pincode-or-password" class="error">
+				<div class="error">Vul dit veld in</div>
+
+				<h3>A checkbox</h3>
+				<fieldset class="checkboxes">
+					<input type="checkbox" id="check-1">
+					<label for="check-1">
+						<span class="focus-ring" aria-hidden="true"></span>
+						<span class="text">Ik heb de <a href="#">gebruiksvoorwaarden</a> gelezen en ga akkoord met de inhoud</span>
+					</label>
+					<input type="checkbox" id="check-2"><label for="check-2">
+						<span class="focus-ring" aria-hidden="true"></span>
+						<span class="text">Jullie mogen mij mailen met leuke tips en acties</span>
+					</label>
+				</fieldset>
+
+				<h3>A radio button switch</h3>
+				<fieldset class="radio-switch"><div>
+					<input type="radio" id="radio-1" name="radio-butt"><label for="radio-1">Ja</label>
+					<input type="radio" id="radio-2" name="radio-butt"><label for="radio-2">Nee</label>
+				</div></fieldset>
+
+				<h3>A link switch</h3>
+				<fieldset class="switch"><div>
+					<a class="switch-button" href="javascript:void(0)">Ja</a>
+					<a class="switch-button" href="javascript:void(0)">Nee</a>
+				</div></fieldset>
+
+				<h3>A link switch with a selected link</h3>
+				<fieldset class="switch"><div>
+					<a class="switch-button selected" href="javascript:void(0)">Ja</a>
+					<a class="switch-button" href="javascript:void(0)">Nee</a>
+				</div></fieldset>
+
+				<h3>A button switch</h3>
+				<fieldset class="switch"><div>
+					<button type="button" class="switch-button">Ja</button>
+					<button type="button" class="switch-button">Nee</button>
+				</div></fieldset>
+
+				<h3>A disabled button switch</h3>
+				<fieldset class="switch"><div>
+					<button type="button" class="switch-button" disabled>Ja</button>
+					<button type="button" class="switch-button" disabled>Nee</button>
+				</div></fieldset>
+
+				<a class="help" href="javascript:void(0)">
+					<span class="hidden-accessible">hulp bij het inloggen</span>
+					<svg aria-hidden="true" width="65px" height="74px" viewBox="0 0 65 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1">
+							<g transform="translate(-349.000000, -531.000000)">
+								<g transform="translate(343.000000, 513.000000)">
+									<g transform="translate(1.000000, 0.000000)">
+										<g fill="inherit" sstroke="inherit" stroke-width="3">
+											<g transform="translate(53.558574, 52.199510) rotate(-1.000000) translate(-53.558574, -52.199510) translate(1.058574, 1.699510)">
+												<path d="M11.7975881,47.4730892 C11.7975881,42.4913937 14.4334738,37.7481083 19.7052451,33.243233 C35.3589393,20.5208688 53.0123204,13.8202438 72.6653884,13.1413581 C102.14499,12.1230295 92.9850186,54.356579 84.2123607,68.1969331 C75.4397029,82.0372872 66.7825219,88.1232577 57.8908009,88.1232577 C48.9990799,88.1232577 36.0398466,86.4137 25.6662916,75.0331066 C15.2927366,63.6525132 11.7975881,54.9456323 11.7975881,47.4730892 Z" transform="translate(52.297588, 50.623258) scale(-1, 1) rotate(23.000000) translate(-52.297588, -50.623258) "></path>
+											</g>
+										</g>
+										<text fill="#FFFFFF" stroke="none">
+											<tspan x="38.262" y="65">i</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+
+				<a class="back" href="javascript:void(0)">
+					<span class="hidden-accessible">stap terug</span>
+					<svg aria-hidden="true" width="64px" height="71px" viewBox="0 0 64 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<path d="M66.7869867,57.3050253 C67.0710044,57.5783923 67.0710044,58.0216077 66.7869867,58.2949747 C66.5029691,58.5683418 66.0424855,58.5683418 65.7584678,58.2949747 L59.2130133,51.9949747 C58.9289956,51.7216077 58.9289956,51.2783923 59.2130133,51.0050253 L65.7584678,44.7050253 C66.0424855,44.4316582 66.5029691,44.4316582 66.7869867,44.7050253 C67.0710044,44.9783923 67.0710044,45.4216077 66.7869867,45.6949747 L60.7557917,51.5 L66.7869867,57.3050253 Z" id="path-1"></path>
+						</defs>
+						<g stroke="none" stroke-width="1" fill="none">
+							<g transform="translate(0.000000, -711.000000)">
+								<g transform="translate(-38.000000, 692.000000)">
+									<g stroke-width="1" transform="translate(55.067377, 51.708160) rotate(26.000000) translate(-55.067377, -51.708160) translate(14.067377, 13.708160)" fill="#A2A1A2">
+										<path d="M0.797588093,34.4730892 C0.797588093,29.4913937 3.43347377,24.7481083 8.70524511,20.243233 C24.3589393,7.52086877 42.0123204,0.820243814 61.6653884,0.14135809 C91.1449903,-0.876970496 81.9850186,41.356579 73.2123607,55.1969331 C64.4397029,69.0372872 55.7825219,75.1232577 46.8908009,75.1232577 C37.9990799,75.1232577 25.0398466,73.4137 14.6662916,62.0331066 C4.29273663,50.6525132 0.797588093,41.9456323 0.797588093,34.4730892 Z" id="Path-3-Copy"></path>
+									</g>
+									<use stroke="#FFFFFF" stroke-width="2" fill="#FBBD8E" fill-rule="nonzero" xlink:href="#path-1"></use>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</main>
+		</div>
+
+		<script type="text/javascript" src="../js/vendor.min.js"></script>
+	</body>
+</html>
