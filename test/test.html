@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/vendor.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/krf.min.css">
 		<title>Klant Registratie Functie Testpagina</title>
 	</head>
@@ -16,6 +17,18 @@
 			<main class="with-help-btn">
 				<h1>Welkom bij de KRF Testpagina</h1>
 				<p>Deze pagina bevat enkele elementen om de styling te testen.</p>
+
+				<h2>De image slider</h2>
+				<!-- The silder is just visual enhancement. No need to include it for readers. -->
+				<div class="swiper-container" aria-hidden="true">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/books.png)"></div>
+						<div class="swiper-slide" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/books.png)"></div>
+						<div class="swiper-slide" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/books.png)"></div>
+					</div>
+				</div>
+				<h2 class="centered">Geniet van luisterboeken en<br> e-books in &eacute;&eacute;n app</h2>
+				<div class="swiper-pagination"></div>
 
 				<h2>Paragraph with a link</h2>
 				<p>
@@ -166,5 +179,6 @@
 		</div>
 
 		<script type="text/javascript" src="../js/vendor.min.js"></script>
+		<script type="text/javascript" src="../js/krf.min.js"></script>
 	</body>
 </html>
