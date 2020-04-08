@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../css/vendor.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/krf.min.css">
 		<title>Klant Registratie Functie Testpagina</title>
@@ -19,16 +20,24 @@
 				<p>Deze pagina bevat enkele elementen om de styling te testen.</p>
 
 				<h2>De image slider</h2>
-				<!-- The silder is just visual enhancement. No need to include it for readers. -->
+				<!-- The slider is just visual enhancement. No need to include it for screen readers. -->
 				<div class="swiper-container" aria-hidden="true">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/books.png)"></div>
-						<div class="swiper-slide" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/books-2.png)"></div>
-						<div class="swiper-slide" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/books-3.png)"></div>
+						<div class="swiper-slide">
+							<div class="swiper-image" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/slide-1-DUMMY-image-450x450-WEB.jpg)"></div>
+							<h2 class="centered">Een zomer vol verhalen met<br>de ZomerBieb</h2>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-image" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/slide-2-DUMMY-image-450x450-WEB.jpg)"></div>
+							<h2 class="centered">Van spanning en chicklit tot<br>non&#8209;fictie en literatuur</h2>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper-image" style="background-image: url(https://rotous.github.io/kbkrf-styling/test/images/slide-3-DUMMY-image-450x450-WEB.jpg)"></div>
+							<h2 class="centered">Lees en luister.<br>Waar en wanneer jij wilt.</h2>
+						</div>
 					</div>
 				</div>
-				<h2 class="centered">Geniet van luisterboeken en<br> e-books in &eacute;&eacute;n app</h2>
-				<div class="swiper-pagination"></div>
+				<div class="swiper-pagination" aria-hidden="true"></div>
 
 				<h2>Paragraph with a link</h2>
 				<p>
@@ -49,7 +58,6 @@
 					<hr>
 					<h2 class="heading-with-ruler-text">Nieuw bij de Bibliotheek?</h2>
 				</div>
-
 
 				<h2>Form elements</h2>
 				<h3>A button</h3>
