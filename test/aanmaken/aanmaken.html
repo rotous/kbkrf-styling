@@ -3,69 +3,43 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../css/krf.min.css">
-		<title>Klant Registratie Functie Testpagina</title>
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../../css/vendor.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/krf.min.css">
+		<title>Maak nu je gratis account aan - de online Bibliotheek</title>
 	</head>
-	<body>
+	<body class="aanmaken">
 		<div class="page">
 			<header>
 				<!-- this might seem a bit strange but most users expect the logo to be in the header -->
 				<!-- so although we will visually show it at the bottom, semantically it will be at the top -->
 				<h2 class="logo"><span class="hidden-accessible">de online Bibliotheek</span></h2>
 			</header>
-			<main class="with-help-btn">
-				<h1>Ben je lid van de Bibliotheek? <br>Of heb je al een account bij ons?</h1>
-				<p>Log dan direct in:</p>
+			<main class="with-back-btn">
+				<h1>Maak nu je gratis account aan</h1>
+				<p>Lees de hele zomer mooie verhalen met een gratis account.</p>
+				<p><a href="allesoverhetgratisaccount.html">Alles over het gratis account</a></p>
 
-				<form>
-					<label for="userid" class="hidden-accessible">Voornaam*</label>
-					<input type="text" placeholder="Pasnummer of e-mailadres" required id="userid" name="userid" spellcheck="false">
+				<form method="post" action="aanmaken-stap2.html">
+					<label for="email" class="hidden-accessible">E-mailadres</label>
+					<input type="email" required placeholder="E-mailadres" id="email" name="email" value="">
 
 					<div class="input-password input-with-button-wrap">
 						<label for="password" class="hidden-accessible">Wachtwoord</label>
-						<input type="password" required class="with-button" placeholder="Pincode of wachtwoord" id="password" name="password" spellcheck="false">
+						<input type="password" required class="with-button" placeholder="Wachtwoord" id="password" name="password">
 						<button type="button" aria-pressed="false" class="icon input-button show-password" onclick="var i=this.parentElement.querySelector('input'); i.setAttribute('type', i.getAttribute('type')==='password'?'text': 'password'); this.setAttribute('aria-pressed', this.getAttribute('aria-pressed')==='true'?'false':'true')">
 							<svg class="icon icon-visibility icon-pressed-true" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation" tabindex="-1" title="VisibilityOff"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
 							<svg class="icon icon-visibilityoff icon-pressed-false" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation" tabindex="-1" title="VisibilityOff"><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></svg>
-							<span class="text">Pincode of wachtwoord zichtbaar</span>
+							<span class="text">Wachtwoord zichtbaar</span>
 						</button>
 					</div>
-					<p class="cta-wrap right-align"><a class="cta no-top-margin" href="#">Wachtwoord vergeten?</a></p>
-					<button type="submit"><span>Inloggen</span></button>
+					<p>Je wachtwoord moet uit minimaal acht tekens bestaan</p>
+
+					<button type="submit"><span>Account aanmaken</span></button>
 				</form>
 
-				<br><br>
-				<div class="heading-with-ruler-wrap">
-					<hr>
-					<h2 class="heading-with-ruler-text">Eerste keer dit jaar?</h2>
-				</div>
-
-				<p><a class="button dark" href="javascript:void(0)">Gratis account aanmaken</a></p>
-
-				<a class="help" href="test.html">
-					<span class="hidden-accessible">hulp bij het inloggen</span>
-					<svg aria-hidden="true" width="65px" height="74px" viewBox="0 0 65 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<g stroke="none" stroke-width="1">
-							<g transform="translate(-349.000000, -531.000000)">
-								<g transform="translate(343.000000, 513.000000)">
-									<g transform="translate(1.000000, 0.000000)">
-										<g fill="inherit" sstroke="inherit" stroke-width="3">
-											<g transform="translate(53.558574, 52.199510) rotate(-1.000000) translate(-53.558574, -52.199510) translate(1.058574, 1.699510)">
-												<path d="M11.7975881,47.4730892 C11.7975881,42.4913937 14.4334738,37.7481083 19.7052451,33.243233 C35.3589393,20.5208688 53.0123204,13.8202438 72.6653884,13.1413581 C102.14499,12.1230295 92.9850186,54.356579 84.2123607,68.1969331 C75.4397029,82.0372872 66.7825219,88.1232577 57.8908009,88.1232577 C48.9990799,88.1232577 36.0398466,86.4137 25.6662916,75.0331066 C15.2927366,63.6525132 11.7975881,54.9456323 11.7975881,47.4730892 Z" transform="translate(52.297588, 50.623258) scale(-1, 1) rotate(23.000000) translate(-52.297588, -50.623258) "></path>
-											</g>
-										</g>
-										<text fill="#FFFFFF" stroke="none">
-											<tspan x="38.262" y="65">i</tspan>
-										</text>
-									</g>
-								</g>
-							</g>
-						</g>
-					</svg>
-				</a>
-
-				<a class="back" href="test.html">
-					<span class="hidden-accessible">stap terug</span>
+				<a class="back" href="#" title="terug naar inloggen">
+					<span class="hidden-accessible">terug naar inloggen</span>
 					<svg aria-hidden="true" width="64px" height="71px" viewBox="0 0 64 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<defs>
 							<path d="M66.7869867,57.3050253 C67.0710044,57.5783923 67.0710044,58.0216077 66.7869867,58.2949747 C66.5029691,58.5683418 66.0424855,58.5683418 65.7584678,58.2949747 L59.2130133,51.9949747 C58.9289956,51.7216077 58.9289956,51.2783923 59.2130133,51.0050253 L65.7584678,44.7050253 C66.0424855,44.4316582 66.5029691,44.4316582 66.7869867,44.7050253 C67.0710044,44.9783923 67.0710044,45.4216077 66.7869867,45.6949747 L60.7557917,51.5 L66.7869867,57.3050253 Z" id="path-1"></path>
@@ -85,6 +59,7 @@
 			</main>
 		</div>
 
-		<script type="text/javascript" src="../js/vendor.min.js"></script>
+		<script type="text/javascript" src="../../js/vendor.min.js"></script>
+		<script type="text/javascript" src="../../js/krf.min.js"></script>
 	</body>
 </html>

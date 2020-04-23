@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../../css/vendor.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/krf.min.css">
+		<title>Hoe log je normaal in? - de online Bibliotheek</title>
+	</head>
+	<body class="wachtwoord-vergeten">
+		<div class="page">
+			<header>
+				<!-- this might seem a bit strange but most users expect the logo to be in the header -->
+				<!-- so although we will visually show it at the bottom, semantically it will be at the top -->
+				<h2 class="logo"><span class="hidden-accessible">de online Bibliotheek</span></h2>
+			</header>
+			<main class="with-help-btn">
+				<h1>Hoe log je normaal in?</h1>
+
+				<form method="post" action="wachtwoordvergeten-mail.html">
+					<fieldset class="switch"><div>
+						<button type="button" class="switch-button" id="btn-pasnummer" aria-pressed="false" aria-expanded="false" aria-controls="form-section-passnummer">Pasnummer</button>
+						<button type="button" class="switch-button" id="btn-email" aria-pressed="false" aria-expanded="false" aria-controls="form-section-email">E-mailadres</button>
+					</div></fieldset>
+					<section class="form-section" id="form-section-passnummer">
+						<p>Je kunt een nieuw wachtwoord aanvragen bij je eigen Bibliotheek.</p>
+					</section>
+					<section class="form-section" id="form-section-email">
+						<p>Vul je e-mailadres in om een nieuw wachtword in te stellen.</p>
+						<label for="email" class="hidden-accessible">E-mailadres</label>
+						<input type="email" required placeholder="E-mailadres" id="email" name="email" value="" spellcheck="false">
+						<button type="submit"><span>Versturen</span></button>
+					</section>
+				</form>
+
+				<a class="help" href="wachtwoordvergeten-help.html" title="hulp bij wachtwoord vergeten">
+					<span class="hidden-accessible">hulp bij het inloggen</span>
+					<svg aria-hidden="true" width="65px" height="74px" viewBox="0 0 65 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1">
+							<g transform="translate(-349.000000, -531.000000)">
+								<g transform="translate(343.000000, 513.000000)">
+									<g transform="translate(1.000000, 0.000000)">
+										<g fill="inherit" sstroke="inherit" stroke-width="3">
+											<g transform="translate(53.558574, 52.199510) rotate(-1.000000) translate(-53.558574, -52.199510) translate(1.058574, 1.699510)">
+												<path d="M11.7975881,47.4730892 C11.7975881,42.4913937 14.4334738,37.7481083 19.7052451,33.243233 C35.3589393,20.5208688 53.0123204,13.8202438 72.6653884,13.1413581 C102.14499,12.1230295 92.9850186,54.356579 84.2123607,68.1969331 C75.4397029,82.0372872 66.7825219,88.1232577 57.8908009,88.1232577 C48.9990799,88.1232577 36.0398466,86.4137 25.6662916,75.0331066 C15.2927366,63.6525132 11.7975881,54.9456323 11.7975881,47.4730892 Z" transform="translate(52.297588, 50.623258) scale(-1, 1) rotate(23.000000) translate(-52.297588, -50.623258) "></path>
+											</g>
+										</g>
+										<text fill="#FFFFFF" stroke="none">
+											<tspan x="38.262" y="65">i</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</main>
+		</div>
+
+		<script type="text/javascript" src="../../js/vendor.min.js"></script>
+		<script type="text/javascript" src="../../js/krf.min.js"></script>
+	</body>
+</html>

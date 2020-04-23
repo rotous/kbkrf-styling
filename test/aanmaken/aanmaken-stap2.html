@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../../css/vendor.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/krf.min.css">
+		<title>We hebben nog een paar gegevens van je nodig - de online Bibliotheek</title>
+	</head>
+	<body class="aanmaken">
+		<div class="page">
+			<header>
+				<!-- this might seem a bit strange but most users expect the logo to be in the header -->
+				<!-- so although we will visually show it at the bottom, semantically it will be at the top -->
+				<h2 class="logo"><span class="hidden-accessible">de online Bibliotheek</span></h2>
+			</header>
+			<main>
+				<h1>Bijna klaar. We hebben nog een paar gegevens van je nodig.</h1>
+
+				<form method="post" action="aanmaken-stap2.html">
+					<label for="firstname" class="hidden-accessible">Voornaam*</label>
+					<input type="text" required placeholder="Voornaam" id="firstname" name="firstname" spellcheck="false">
+
+					<label for="prefix" class="hidden-accessible">Tussenvoegsel</label>
+					<input class="small" type="text" placeholder="Tussenvoegsel" id="prefix" name="prefix" spellcheck="false">
+
+					<label for="lastname" class="hidden-accessible">Achternaam*</label>
+					<input type="text" required placeholder="Achternaam" id="~lastname" name="lastname" spellcheck="false">
+
+					<label for="zipcode" class="hidden-accessible">Tussenvoegsel</label>
+					<input class="small" type="text" required placeholder="Postcode (4 cijfers)" id="zipcode" name="prefix" minlength="4" maxlength="4" spellcheck="false">
+
+					<p>In onze <a href="javascript:void(0)">privacyverklaring</a> lees je hoe we omgaan met je persoonsgegevens.</p>
+
+					<fieldset class="checkboxes">
+						<input type="checkbox" id="terms" name="terms" required>
+						<label for="terms">
+							<span class="focus-ring" aria-hidden="true"></span>
+							<span class="text">Ik heb de <a href="javascript:void(0)">gebruiksvoorwaarden</a> gelezen en ga akkoord met de inhoud.</span>
+						</label>
+						<input type="checkbox" id="newsletter" name="newsletter">
+						<label for="newsletter">
+							<span class="focus-ring" aria-hidden="true"></span>
+							<span class="text">Ik ontvang graag de nieuwsbrief en ik bevestig dat ik 16 jaar of ouder ben.</span>
+						</label>
+					</fieldset>
+
+					<button type="submit"><span>Opslaan</span></button>
+				</form>
+			</main>
+		</div>
+
+		<script type="text/javascript" src="../../js/vendor.min.js"></script>
+		<script type="text/javascript" src="../../js/krf.min.js"></script>
+	</body>
+</html>
