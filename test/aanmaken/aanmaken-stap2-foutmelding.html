@@ -20,7 +20,7 @@
 
 				<form method="post" action="aanmaken-dankjewel.html">
 					<label for="firstname" class="hidden-accessible">Voornaam*</label>
-					<input type="text" required placeholder="Voornaam" id="firstname" name="firstname" spellcheck="false" data-validate-on-the-fly="true" data-error-message="firstname-error">
+					<input type="text" class="error" required placeholder="Voornaam" id="firstname" name="firstname" spellcheck="false" data-validate-on-the-fly="true" data-error-message="firstname-error">
 					<p class="error-message" id="firstname-error">Een voornaam is verplicht.</p>
 
 					<div class="input-container">
@@ -29,17 +29,17 @@
 					</div>
 
 					<label for="lastname" class="hidden-accessible">Achternaam*</label>
-					<input type="text" required placeholder="Achternaam" id="~lastname" name="lastname" spellcheck="false" data-validate-on-the-fly="true" data-error-message="lastname-error">
+					<input type="text" class="error" required placeholder="Achternaam" id="lastname" name="lastname" spellcheck="false" data-validate-on-the-fly="true" data-error-message="lastname-error">
 					<p class="error-message" id="lastname-error">Een achternaam is verplicht.</p>
 
 					<label for="zipcode" class="hidden-accessible">Postcode (4 cijfers)</label>
-					<input class="small" type="text" required placeholder="Postcode (4 cijfers)" id="zipcode" name="zipcode" minlength="4" maxlength="4" pattern="^[1-9][0-9]{3}$" spellcheck="false" data-validate-on-the-fly="true" data-error-message="zipcode-error">
+					<input class="small error" type="text" required placeholder="Postcode (4 cijfers)" id="zipcode" name="zipcode" minlength="4" maxlength="4" pattern="^[1-9][0-9]{3}$" spellcheck="false" data-validate-on-the-fly="true" data-error-message="zipcode-error">
 					<p class="error-message" id="zipcode-error">Vul de vier cijfers van je postcode in.</p>
 
 					<p>In onze <a href="javascript:void(0)">privacyverklaring</a> lees je hoe we omgaan met je persoonsgegevens.</p>
 
 					<fieldset class="checkboxes">
-						<input type="checkbox" id="terms" name="terms" required data-error-message="terms-error">
+						<input type="checkbox" class="error" id="terms" name="terms" required data-error-message="terms-error">
 						<label for="terms">
 							<span class="focus-ring" aria-hidden="true"></span>
 							<span class="text">Ik heb de <a href="javascript:void(0)">gebruiksvoorwaarden</a> gelezen en ga akkoord met de inhoud.</span>
